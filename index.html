@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Aggiungo foglio css e manifest app -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Aggiungo Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Codigotchi App</title>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <img src="images/logo.png" alt="Logo Anna Miolato">
+    </header>
+
+    <main>
+        <section class="codigotchi">
+            <img src="images/codigotchi.png" alt="Immagine del Codigotchi">
+            <div id="screen" class="codigotchi-screen"></div>
+        </section>
+
+        <section id="panel-data" class="panels">
+
+            <div class="panel panel-microphone">
+                <button id="mic">
+                    <img src="images/mic.png" alt="Pulsante Microfono">
+                </button>
+                <h2>Attiva il microfono!</h2>
+            </div> 
+
+            <div class="panel panel-commands">
+                <h2>Prova qualche comando vocale!</h2>
+                <h3>Comandi supportati</h3>
+                
+                <div class="commands">
+                    <ul>
+                        <li>Mangia</li>
+                        <li>Balla</li>
+                        <li>Dormi</li>
+                    </ul>
+                </div>
+
+            </div>
+        
+        </section>
+    </main>
+
+</div>
+
+    <!-- Aggiungo foglio Javascript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

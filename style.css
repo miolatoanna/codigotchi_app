@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(#828bf8, #3e3fed);
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+header img {
+    width: 90px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+.codigotchi {
+    width: 230px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative; 
+}
+
+.codigotchi-screen {
+    position: absolute;
+    top: 120px;
+    left: 61px;
+    width: 112px;
+    height: 112px;
+    background-image: url('images/static.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.codigotchi-screen_balla {
+    background-image: url('images/balla.gif');
+}
+
+.codigotchi-screen_mangia {
+    background-image: url('images/mangia.gif');
+}
+
+.codigotchi-screen_dormi {
+    background-image: url('images/dormi.gif');
+}
+
+.commands ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.commands ul li {
+    font-size: 25px;
+}
+
+.panels {
+    position: relative;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 16px;
+    padding: 18px;
+    transition: transform 0.2s;
+}
+
+button {
+    background-color: #f71469;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 40px;
+    margin: 16px;
+}
+
+h2 {
+    margin-bottom: 18px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    color: rgb(110, 100, 100);
+    margin-bottom: 14px;
+}
+
+.panel-commands {
+    position: absolute;
+    top: 0;
+    left: 0;  
+    visibility: hidden;
+    transform: scale(0);
+}
+
+.listening .panel-microphone {  
+    visibility: hidden;
+    transform: scale(0);
+}
+
+.listening .panel-commands {
+    visibility: visible;
+    transform: scale(1);
+}
+
